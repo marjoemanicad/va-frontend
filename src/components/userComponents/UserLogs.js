@@ -19,7 +19,7 @@ function UserLogs() {
         .then(result => 
             {
                 const userid = result.id
-                fetch(`http://127.0.0.1:8000/api/logs/?user=${userid}`, {
+                fetch(`https://va-restapi.herokuapp.com/api/logs/?user=${userid}`, {
                 method:'GET',
                 headers: {
                     'Content-Type':'application/json',
