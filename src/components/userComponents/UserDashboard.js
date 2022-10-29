@@ -14,7 +14,7 @@ function UserDashboard() {
   const [ test, setTest] = useState('')
     const start = () => {
       const last_action = ('login')
-        fetch('http://127.0.0.1:8000/api/logs/', {
+        fetch('https://va-restapi.herokuapp.com/api/logs/', {
             method:"POST",
             headers: {
                 'Content-Type':'application/json',
@@ -34,7 +34,7 @@ function UserDashboard() {
 
     const logout = () => {
       const last_action = ('logout')
-        fetch(`http://127.0.0.1:8000/api/logs/${kes}/`, {
+        fetch(`https://va-restapi.herokuapp.com/api/logs/${kes}/`, {
             method:"PUT",
             headers: {
                 'Content-Type':'application/json',

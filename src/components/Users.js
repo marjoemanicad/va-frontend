@@ -6,7 +6,7 @@ function Users() {
   const token = localStorage.getItem('mytoken')
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/userlist/', {
+    fetch('https://va-restapi.herokuapp.com/api/userlist/', {
       method:'GET',
           headers: {
             'Content-Type':'application/json',

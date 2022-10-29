@@ -8,7 +8,7 @@ function UserLogs() {
     const token = localStorage.getItem('mytoken')
 
     useEffect(() => {
-        fetch('http://127.0.0.1:8000/api/rest-auth/user/', {
+        fetch('https://va-restapi.herokuapp.com/api/rest-auth/user/', {
               method:'GET',
                   headers: {
                     'Content-Type':'application/json',
